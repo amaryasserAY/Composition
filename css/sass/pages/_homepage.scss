@@ -1,0 +1,173 @@
+.slider {
+  q {
+    font: {
+      size: 20px;
+      weight: bolder;
+      family: Tahoma, Arial;
+      style: italic;
+    }
+    margin: 30px auto;
+    color: #5e5e5e;
+    text-align: center;
+    width: 80%;
+    line-height: 1.7;
+  }
+  img {
+    max-width: 100%;
+   
+  }
+  .bullets{
+      text-align: center;
+      li{
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-color: $gryColor;
+          border-radius: 50%;
+          border :3px solid $gryColor;
+          cursor: pointer;
+          @include prefixer(transition , all .5s ease-in-out , moz webkit ms o );
+          &.active,
+          &:hover{
+              border: 3px solid black;
+              background-color: white;
+          }
+
+      }
+    }
+  }
+
+/*
+Start Service box
+*/
+.services{
+.services-box{
+
+
+@media #{$minMedium}{
+  float: $floatleft;
+  width:(100% / 3);
+  padding-right: 20px;
+}
+
+@media #{$maxMopile}{
+
+  display: block;
+  margin-bottom: 15px;
+}
+
+
+
+
+.services-titile{
+  color: #666;
+  i{
+    font-size: 30px;
+    position: relative;
+    top: 3px;
+    margin-right: 2px;
+  }
+  
+}
+
+.services-desc{
+  color:#777;
+
+  line-height: 1.5;
+}
+a{
+  text-decoration: none;
+  color: $redColor;
+}
+
+}
+}
+
+//  our-players
+
+
+
+.our-players{
+.players-box{
+ 
+
+@media #{$minSmall}{
+ float: $floatleft;
+  width:(100% / 2);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media #{$minMedium}{
+    width:(100% / 3);
+  text-align: $text-left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+@media #{$minLarge}{
+    width:(100% / 5);
+}
+
+
+
+@media #{$maxMopile}{
+  margin-bottom: 40px;
+
+}
+
+
+
+.players-img{
+  max-width: 100%;
+}
+.players-titile{
+  color: #666;
+  font-weight: normal;
+span{
+  font-weight: bold;
+  color: $redColor;
+  }
+  
+}
+
+.players-desc{
+  color:#777;
+
+  line-height: 1.5;
+}
+a{
+  text-decoration: none;
+  color: $redColor;
+}
+
+}
+}
+
+
+// Start lorem
+
+
+
+.lorem{
+  .lorem-box{
+      float: $floatleft;
+  width:(94% / 3);
+  &:not(:last-of-type){
+    margin-right: 3%;
+  }
+
+@media #{$maxMopile}{
+  margin-bottom: 30px;
+float: none;
+width: 100%;
+text-align: center;
+}
+
+
+.lorem-img{
+  max-width: 100%;
+}
+  }
+}
